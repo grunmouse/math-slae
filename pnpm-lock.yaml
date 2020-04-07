@@ -1,0 +1,9 @@
+dependencies:
+  '@grunmouse/math-calc-scheme': 'link:../math-calc-scheme'
+  '@grunmouse/math-matrix': 'link:../math-matrix'
+  '@grunmouse/special-map': 'link:../special-map'
+lockfileVersion: 5.1
+specifiers:
+  '@grunmouse/math-calc-scheme': 'link:..\math-calc-scheme'
+  '@grunmouse/math-matrix': 'link:..\math-matrix'
+  '@grunmouse/special-map': 'link:..\special-map'

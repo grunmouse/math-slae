@@ -1,0 +1,16 @@
+{
+  "name": "@grunmouse/math-slae",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@grunmouse/math-calc-scheme": "link:..\\math-calc-scheme",
+    "@grunmouse/math-matrix": "link:..\\math-matrix",
+    "@grunmouse/special-map": "link:..\\special-map"
+  }
+}
