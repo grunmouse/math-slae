@@ -1,4 +1,4 @@
-let calc = require('@grunmosue/math-calc-scheme');
+let calc = require('@grunmouse/math-calc-scheme');
 let independent = require('../independent');
 let {
 	onceInstances,

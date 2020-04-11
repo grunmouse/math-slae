@@ -24,7 +24,7 @@ function lineSystem(A){
 		
 		//x = invA * _b;
 		
-		let _x = invA.mulCol(_b);
+		let _x = invA.mul(_b);
 		
 		return _x;
 	};

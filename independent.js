@@ -52,7 +52,7 @@ function independent(A){
 			let cols = columns.concat(col).sort();
 			
 			//Составляем окаймляющий минор
-			let values = Array.from({length: range*range, (_, index)=>{
+			let values = Array.from({length: range*range}, (_, index)=>{
 				let col = index % range, row = Math.floor(index/range);
 				return sys[p.row][cols[p.col]];
 			});

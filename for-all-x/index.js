@@ -1,7 +1,9 @@
-let calc = require('@grunmosue/math-calc-scheme');
-let independent = require('../independent');
+const calc = require('@grunmosue/math-calc-scheme');
+const independent = require('../independent');
 
-let {lineEquation, lineSystem} = require('./equations.js');
+const {lineEquation, lineSystem} = require('./equations.js');
+
+const descr = require('../description.js');
 
 /**
  * Создаёт граф расчётной схемы для системы линейных уравнений, заданной матрицей коэффициентов и столбцом левых частей.
@@ -24,7 +26,10 @@ function createCalcScheme(A, b, vars){
 	let fun = lineSystem(_A);
 	let name = _A.map((row, j)=>(row.map((a, i)=>(''+a+vars[i].name)).join(' + ') + ' = ' + b[j])).join(',\n') + ';';
 	
-	new calc.CalcNode(name, A.length, vars, b, ()=>(fun));
+	let calc = new calc.CalcNode(name, A.length, vars, b, ()=>(fun));
+	
+	calc.description = descr(_A, vars, b);
+	
 	return vars;
 }
 

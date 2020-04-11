@@ -1,5 +1,11 @@
-let calc = require('@rakov/math-calc-scheme');
-let iterable = require('@rakov/iterable');
+let calc = require('@grunmouse/math-calc-scheme');
+let iterable = {
+	getFirst(a){
+		for(let x of a){
+			return x;
+		}
+	}
+};
 
 let withConstB = require('../index.js');
 const {
