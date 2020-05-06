@@ -1,4 +1,4 @@
-describe('math-linear-system', ()=>{
+describe('math-slae', ()=>{
 	require('./test-analyse.js');
 	require('../with-const-b/test/test.js');
 });
